@@ -2,7 +2,7 @@ import requests
 import lxml.html as lh
 import pandas as pd
 
-url='https://www.abf.gov.au/importing-exporting-and-manufacturing/tariff-classification/current-tariff/schedule-3/section-i/chapter-1'
+url=''
 #Create a handle, page, to handle the contents of the website
 page = requests.get(url)
 #Store the contents of the website under doc
@@ -51,4 +51,4 @@ for j in range(1,len(tr_elements)):
 Dict={title:column for (title,column) in col}
 df=pd.DataFrame(Dict)
 
-df.to_csv('abf_chapter1.csv')
+df.to_csv('xxx.csv')
